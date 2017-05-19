@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B9E5428625C586E2B15C320 /* libPods-YSMediaButtonUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C814C2D8E74C9798D973FA /* libPods-YSMediaButtonUITests.a */; };
+		3C37130385820F404FB27117 /* libPods-YSMediaButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D149BE4C6B1EFC84839948 /* libPods-YSMediaButton.a */; };
+		548E10041ECF5A4600ABD535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10031ECF5A4600ABD535 /* main.m */; };
+		548E10071ECF5A4600ABD535 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10061ECF5A4600ABD535 /* AppDelegate.m */; };
+		548E100D1ECF5A4600ABD535 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548E100B1ECF5A4600ABD535 /* Main.storyboard */; };
+		548E100F1ECF5A4600ABD535 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548E100E1ECF5A4600ABD535 /* Assets.xcassets */; };
+		548E10121ECF5A4600ABD535 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548E10101ECF5A4600ABD535 /* LaunchScreen.storyboard */; };
+		548E101D1ECF5A4600ABD535 /* YSMediaButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E101C1ECF5A4600ABD535 /* YSMediaButtonTests.m */; };
+		548E10281ECF5A4600ABD535 /* YSMediaButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10271ECF5A4600ABD535 /* YSMediaButtonUITests.m */; };
+		548E10391ECF5AEB00ABD535 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10361ECF5AEB00ABD535 /* ViewController.m */; };
+		548E103A1ECF5AEB00ABD535 /* YSMediaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10381ECF5AEB00ABD535 /* YSMediaButton.m */; };
+		83F19B57392DEBD645F9681F /* libPods-YSMediaButtonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F0ABFE2E335B80ABB998ED /* libPods-YSMediaButtonTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		548E10191ECF5A4600ABD535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 548E0FF71ECF5A4600ABD535 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 548E0FFE1ECF5A4600ABD535;
+			remoteInfo = YSMediaButton;
+		};
+		548E10241ECF5A4600ABD535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 548E0FF71ECF5A4600ABD535 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 548E0FFE1ECF5A4600ABD535;
+			remoteInfo = YSMediaButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		196E7CBC5A6D6703BEB0CAFA /* Pods-YSMediaButtonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButtonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButtonUITests/Pods-YSMediaButtonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		29646F02E723FD24D009FF2F /* Pods-YSMediaButtonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButtonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButtonTests/Pods-YSMediaButtonTests.release.xcconfig"; sourceTree = "<group>"; };
+		41F0ABFE2E335B80ABB998ED /* libPods-YSMediaButtonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSMediaButtonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A84F148A9461F5C411A0342 /* Pods-YSMediaButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButton/Pods-YSMediaButton.debug.xcconfig"; sourceTree = "<group>"; };
+		548E0FFF1ECF5A4600ABD535 /* YSMediaButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSMediaButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		548E10031ECF5A4600ABD535 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		548E10051ECF5A4600ABD535 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		548E10061ECF5A4600ABD535 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		548E100C1ECF5A4600ABD535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		548E100E1ECF5A4600ABD535 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		548E10111ECF5A4600ABD535 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		548E10131ECF5A4600ABD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		548E10181ECF5A4600ABD535 /* YSMediaButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSMediaButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		548E101C1ECF5A4600ABD535 /* YSMediaButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMediaButtonTests.m; sourceTree = "<group>"; };
+		548E101E1ECF5A4600ABD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		548E10231ECF5A4600ABD535 /* YSMediaButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSMediaButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		548E10271ECF5A4600ABD535 /* YSMediaButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSMediaButtonUITests.m; sourceTree = "<group>"; };
+		548E10291ECF5A4600ABD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		548E10351ECF5AEB00ABD535 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		548E10361ECF5AEB00ABD535 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		548E10371ECF5AEB00ABD535 /* YSMediaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMediaButton.h; sourceTree = "<group>"; };
+		548E10381ECF5AEB00ABD535 /* YSMediaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMediaButton.m; sourceTree = "<group>"; };
+		5CFA9BA42E99BAA20B628EBC /* Pods-YSMediaButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButton/Pods-YSMediaButton.release.xcconfig"; sourceTree = "<group>"; };
+		690145D3252E6D6DB69A887C /* Pods-YSMediaButtonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButtonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButtonUITests/Pods-YSMediaButtonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72C814C2D8E74C9798D973FA /* libPods-YSMediaButtonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSMediaButtonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC351A9843A7A0981B2ED2C0 /* Pods-YSMediaButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButtonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButtonTests/Pods-YSMediaButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2D149BE4C6B1EFC84839948 /* libPods-YSMediaButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSMediaButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		548E0FFC1ECF5A4600ABD535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C37130385820F404FB27117 /* libPods-YSMediaButton.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548E10151ECF5A4600ABD535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F19B57392DEBD645F9681F /* libPods-YSMediaButtonTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548E10201ECF5A4600ABD535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9E5428625C586E2B15C320 /* libPods-YSMediaButtonUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B04415F3B16A6EAC245EDD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A84F148A9461F5C411A0342 /* Pods-YSMediaButton.debug.xcconfig */,
+				5CFA9BA42E99BAA20B628EBC /* Pods-YSMediaButton.release.xcconfig */,
+				AC351A9843A7A0981B2ED2C0 /* Pods-YSMediaButtonTests.debug.xcconfig */,
+				29646F02E723FD24D009FF2F /* Pods-YSMediaButtonTests.release.xcconfig */,
+				196E7CBC5A6D6703BEB0CAFA /* Pods-YSMediaButtonUITests.debug.xcconfig */,
+				690145D3252E6D6DB69A887C /* Pods-YSMediaButtonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		548E0FF61ECF5A4600ABD535 = {
+			isa = PBXGroup;
+			children = (
+				548E10011ECF5A4600ABD535 /* YSMediaButton */,
+				548E101B1ECF5A4600ABD535 /* YSMediaButtonTests */,
+				548E10261ECF5A4600ABD535 /* YSMediaButtonUITests */,
+				548E10001ECF5A4600ABD535 /* Products */,
+				3B04415F3B16A6EAC245EDD5 /* Pods */,
+				A3AE18D58150899CBB9E6ECE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		548E10001ECF5A4600ABD535 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				548E0FFF1ECF5A4600ABD535 /* YSMediaButton.app */,
+				548E10181ECF5A4600ABD535 /* YSMediaButtonTests.xctest */,
+				548E10231ECF5A4600ABD535 /* YSMediaButtonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		548E10011ECF5A4600ABD535 /* YSMediaButton */ = {
+			isa = PBXGroup;
+			children = (
+				548E10051ECF5A4600ABD535 /* AppDelegate.h */,
+				548E10061ECF5A4600ABD535 /* AppDelegate.m */,
+				548E10351ECF5AEB00ABD535 /* ViewController.h */,
+				548E10361ECF5AEB00ABD535 /* ViewController.m */,
+				548E10371ECF5AEB00ABD535 /* YSMediaButton.h */,
+				548E10381ECF5AEB00ABD535 /* YSMediaButton.m */,
+				548E100B1ECF5A4600ABD535 /* Main.storyboard */,
+				548E100E1ECF5A4600ABD535 /* Assets.xcassets */,
+				548E10101ECF5A4600ABD535 /* LaunchScreen.storyboard */,
+				548E10131ECF5A4600ABD535 /* Info.plist */,
+				548E10021ECF5A4600ABD535 /* Supporting Files */,
+			);
+			path = YSMediaButton;
+			sourceTree = "<group>";
+		};
+		548E10021ECF5A4600ABD535 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				548E10031ECF5A4600ABD535 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		548E101B1ECF5A4600ABD535 /* YSMediaButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				548E101C1ECF5A4600ABD535 /* YSMediaButtonTests.m */,
+				548E101E1ECF5A4600ABD535 /* Info.plist */,
+			);
+			path = YSMediaButtonTests;
+			sourceTree = "<group>";
+		};
+		548E10261ECF5A4600ABD535 /* YSMediaButtonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				548E10271ECF5A4600ABD535 /* YSMediaButtonUITests.m */,
+				548E10291ECF5A4600ABD535 /* Info.plist */,
+			);
+			path = YSMediaButtonUITests;
+			sourceTree = "<group>";
+		};
+		A3AE18D58150899CBB9E6ECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D149BE4C6B1EFC84839948 /* libPods-YSMediaButton.a */,
+				41F0ABFE2E335B80ABB998ED /* libPods-YSMediaButtonTests.a */,
+				72C814C2D8E74C9798D973FA /* libPods-YSMediaButtonUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		548E0FFE1ECF5A4600ABD535 /* YSMediaButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548E102C1ECF5A4600ABD535 /* Build configuration list for PBXNativeTarget "YSMediaButton" */;
+			buildPhases = (
+				C078EDC837FB7764F75438A2 /* [CP] Check Pods Manifest.lock */,
+				548E0FFB1ECF5A4600ABD535 /* Sources */,
+				548E0FFC1ECF5A4600ABD535 /* Frameworks */,
+				548E0FFD1ECF5A4600ABD535 /* Resources */,
+				B0DBF26957AD264E0B0B51EB /* [CP] Embed Pods Frameworks */,
+				2996ACC98198E46CC97F1A30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSMediaButton;
+			productName = YSMediaButton;
+			productReference = 548E0FFF1ECF5A4600ABD535 /* YSMediaButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		548E10171ECF5A4600ABD535 /* YSMediaButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548E102F1ECF5A4600ABD535 /* Build configuration list for PBXNativeTarget "YSMediaButtonTests" */;
+			buildPhases = (
+				B516178F297F0DF9233C2011 /* [CP] Check Pods Manifest.lock */,
+				548E10141ECF5A4600ABD535 /* Sources */,
+				548E10151ECF5A4600ABD535 /* Frameworks */,
+				548E10161ECF5A4600ABD535 /* Resources */,
+				E490AB713AA6644380D6941C /* [CP] Embed Pods Frameworks */,
+				54FF48F12DDA960E97A0988E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				548E101A1ECF5A4600ABD535 /* PBXTargetDependency */,
+			);
+			name = YSMediaButtonTests;
+			productName = YSMediaButtonTests;
+			productReference = 548E10181ECF5A4600ABD535 /* YSMediaButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		548E10221ECF5A4600ABD535 /* YSMediaButtonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548E10321ECF5A4600ABD535 /* Build configuration list for PBXNativeTarget "YSMediaButtonUITests" */;
+			buildPhases = (
+				BA1DF052A6CE075589BB1D5C /* [CP] Check Pods Manifest.lock */,
+				548E101F1ECF5A4600ABD535 /* Sources */,
+				548E10201ECF5A4600ABD535 /* Frameworks */,
+				548E10211ECF5A4600ABD535 /* Resources */,
+				2B5951A56A84FD7066B29A7D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				548E10251ECF5A4600ABD535 /* PBXTargetDependency */,
+			);
+			name = YSMediaButtonUITests;
+			productName = YSMediaButtonUITests;
+			productReference = 548E10231ECF5A4600ABD535 /* YSMediaButtonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		548E0FF71ECF5A4600ABD535 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Milton;
+				TargetAttributes = {
+					548E0FFE1ECF5A4600ABD535 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7WPAV8MY57;
+						ProvisioningStyle = Automatic;
+					};
+					548E10171ECF5A4600ABD535 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7WPAV8MY57;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 548E0FFE1ECF5A4600ABD535;
+					};
+					548E10221ECF5A4600ABD535 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7WPAV8MY57;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 548E0FFE1ECF5A4600ABD535;
+					};
+				};
+			};
+			buildConfigurationList = 548E0FFA1ECF5A4600ABD535 /* Build configuration list for PBXProject "YSMediaButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 548E0FF61ECF5A4600ABD535;
+			productRefGroup = 548E10001ECF5A4600ABD535 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				548E0FFE1ECF5A4600ABD535 /* YSMediaButton */,
+				548E10171ECF5A4600ABD535 /* YSMediaButtonTests */,
+				548E10221ECF5A4600ABD535 /* YSMediaButtonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		548E0FFD1ECF5A4600ABD535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548E10121ECF5A4600ABD535 /* LaunchScreen.storyboard in Resources */,
+				548E100F1ECF5A4600ABD535 /* Assets.xcassets in Resources */,
+				548E100D1ECF5A4600ABD535 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548E10161ECF5A4600ABD535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548E10211ECF5A4600ABD535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2996ACC98198E46CC97F1A30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSMediaButton/Pods-YSMediaButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B5951A56A84FD7066B29A7D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSMediaButtonUITests/Pods-YSMediaButtonUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54FF48F12DDA960E97A0988E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSMediaButtonTests/Pods-YSMediaButtonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0DBF26957AD264E0B0B51EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSMediaButton/Pods-YSMediaButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B516178F297F0DF9233C2011 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1DF052A6CE075589BB1D5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C078EDC837FB7764F75438A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E490AB713AA6644380D6941C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YSMediaButtonTests/Pods-YSMediaButtonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		548E0FFB1ECF5A4600ABD535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548E10391ECF5AEB00ABD535 /* ViewController.m in Sources */,
+				548E10071ECF5A4600ABD535 /* AppDelegate.m in Sources */,
+				548E103A1ECF5AEB00ABD535 /* YSMediaButton.m in Sources */,
+				548E10041ECF5A4600ABD535 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548E10141ECF5A4600ABD535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548E101D1ECF5A4600ABD535 /* YSMediaButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548E101F1ECF5A4600ABD535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548E10281ECF5A4600ABD535 /* YSMediaButtonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		548E101A1ECF5A4600ABD535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 548E0FFE1ECF5A4600ABD535 /* YSMediaButton */;
+			targetProxy = 548E10191ECF5A4600ABD535 /* PBXContainerItemProxy */;
+		};
+		548E10251ECF5A4600ABD535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 548E0FFE1ECF5A4600ABD535 /* YSMediaButton */;
+			targetProxy = 548E10241ECF5A4600ABD535 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		548E100B1ECF5A4600ABD535 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				548E100C1ECF5A4600ABD535 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		548E10101ECF5A4600ABD535 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				548E10111ECF5A4600ABD535 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		548E102A1ECF5A4600ABD535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		548E102B1ECF5A4600ABD535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		548E102D1ECF5A4600ABD535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A84F148A9461F5C411A0342 /* Pods-YSMediaButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7WPAV8MY57;
+				INFOPLIST_FILE = YSMediaButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FengDingKeJi.YSMediaButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		548E102E1ECF5A4600ABD535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFA9BA42E99BAA20B628EBC /* Pods-YSMediaButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7WPAV8MY57;
+				INFOPLIST_FILE = YSMediaButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FengDingKeJi.YSMediaButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		548E10301ECF5A4600ABD535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC351A9843A7A0981B2ED2C0 /* Pods-YSMediaButtonTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7WPAV8MY57;
+				INFOPLIST_FILE = YSMediaButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FengDingKeJi.YSMediaButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSMediaButton.app/YSMediaButton";
+			};
+			name = Debug;
+		};
+		548E10311ECF5A4600ABD535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29646F02E723FD24D009FF2F /* Pods-YSMediaButtonTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7WPAV8MY57;
+				INFOPLIST_FILE = YSMediaButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FengDingKeJi.YSMediaButtonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSMediaButton.app/YSMediaButton";
+			};
+			name = Release;
+		};
+		548E10331ECF5A4600ABD535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196E7CBC5A6D6703BEB0CAFA /* Pods-YSMediaButtonUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7WPAV8MY57;
+				INFOPLIST_FILE = YSMediaButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FengDingKeJi.YSMediaButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YSMediaButton;
+			};
+			name = Debug;
+		};
+		548E10341ECF5A4600ABD535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 690145D3252E6D6DB69A887C /* Pods-YSMediaButtonUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7WPAV8MY57;
+				INFOPLIST_FILE = YSMediaButtonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FengDingKeJi.YSMediaButtonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YSMediaButton;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		548E0FFA1ECF5A4600ABD535 /* Build configuration list for PBXProject "YSMediaButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548E102A1ECF5A4600ABD535 /* Debug */,
+				548E102B1ECF5A4600ABD535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		548E102C1ECF5A4600ABD535 /* Build configuration list for PBXNativeTarget "YSMediaButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548E102D1ECF5A4600ABD535 /* Debug */,
+				548E102E1ECF5A4600ABD535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		548E102F1ECF5A4600ABD535 /* Build configuration list for PBXNativeTarget "YSMediaButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548E10301ECF5A4600ABD535 /* Debug */,
+				548E10311ECF5A4600ABD535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		548E10321ECF5A4600ABD535 /* Build configuration list for PBXNativeTarget "YSMediaButtonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548E10331ECF5A4600ABD535 /* Debug */,
+				548E10341ECF5A4600ABD535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 548E0FF71ECF5A4600ABD535 /* Project object */;
+}
