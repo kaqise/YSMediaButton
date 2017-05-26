@@ -40,6 +40,7 @@ typedef NS_ENUM(NSInteger , TouchStyle) {
 
 @optional
 - (void)ys_touchesMovingActionCurrentTime:(NSTimeInterval)currentTime;//移动中当前时间，用于修改UI
+- (void)ys_setoffTapAction;//点击事件
 @end
 
 

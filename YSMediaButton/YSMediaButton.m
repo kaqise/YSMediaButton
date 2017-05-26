@@ -74,6 +74,13 @@
         }
     }
     _startBrightness = [UIScreen mainScreen].brightness;
+    
+    UITouch *touch = [touches anyObject];
+    CGPoint currentP = [touch locationInView:self];
+    CGPoint diffPoint = CGPointMake(currentP.x - _statrPoint.x, currentP.y - _statrPoint.y);
+    if (diffPoint.x < kDefaultMinMovieSpace && diffPoint.x > -kDefaultMinMovieSpace && diffPoint.y < kDefaultMinMovieSpace && diffPoint.y > -kDefaultMinMovieSpace) {
+        [self.touchDelegate ys_setoffTapAction];
+    }
 }
 
 //移动
@@ -87,6 +94,7 @@
     CGPoint panPoint = CGPointMake(currentP.x - _statrPoint.x, currentP.y - _statrPoint.y);
     
     if (_direction == Direction_None) {
+        
         //移动方向
         if (panPoint.x >= kDefaultMinMovieSpace || panPoint.x <= -kDefaultMinMovieSpace) {//手指有移动方向为左右
             _direction = Direction_LeftOrRight;

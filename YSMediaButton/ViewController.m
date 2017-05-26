@@ -10,17 +10,11 @@
 #import <Masonry.h>
 #import "YSMediaButton.h"
 
-@interface ViewController ()<YSMediaButtonDelegate>
-
-@property (nonatomic, strong)UILabel *voiceLabel;
-
-@property (nonatomic, strong)UILabel *brightnessLabel;
+@interface ViewController ()<YSMediaButtonDelegate,UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong)YSMediaButton *button;
 
-@property (nonatomic, assign)CGPoint startPoint;
-
-@property (nonatomic, assign)CGPoint endPoint;
+@property (nonatomic, strong)UIView *backView;
 
 @end
 
@@ -32,15 +26,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _backView = [[UIView alloc]init];
+    _backView.backgroundColor = [UIColor yellowColor];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction)];
+    tap.delegate = self;
+    _backView.userInteractionEnabled = YES;
+    [_backView addGestureRecognizer:tap];
+    [self.view addSubview:_backView];
+    [_backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(0);
+    }];
+    
+    
     _button = [[YSMediaButton alloc]init];
     _button.touchDelegate = self;
-    _button.backgroundColor = [UIColor redColor];
-    [self.view addSubview:_button];
+    _button.backgroundColor = [UIColor clearColor];
+    [_backView addSubview:_button];
     
     [_button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
     
+}
+
+- (void)tapAction{
+    NSLog(@"111111");
 }
 
 -(NSTimeInterval)ys_getTotalTime{
@@ -55,6 +65,23 @@
 -(void)ys_touchesMovingActionCurrentTime:(NSTimeInterval)currentTime{
     
 }
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    
+//    if ([touch.view isDescendantOfView:_backView]) {
+//        
+//        return YES;
+//        
+//    }
+
+
+    
+    return YES;
+}
+
+-(void)ys_setoffTapAction{
+    [self tapAction];
+}
+
 
 
 
