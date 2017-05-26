@@ -29,7 +29,6 @@
     _backView = [[UIView alloc]init];
     _backView.backgroundColor = [UIColor yellowColor];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction)];
-    tap.delegate = self;
     _backView.userInteractionEnabled = YES;
     [_backView addGestureRecognizer:tap];
     [self.view addSubview:_backView];
@@ -65,24 +64,11 @@
 -(void)ys_touchesMovingActionCurrentTime:(NSTimeInterval)currentTime{
     
 }
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
-    
-//    if ([touch.view isDescendantOfView:_backView]) {
-//        
-//        return YES;
-//        
-//    }
-
-
-    
-    return YES;
-}
 
 -(void)ys_setoffTapAction{
-    [self tapAction];
+    
+    
 }
-
-
 
 
 @end

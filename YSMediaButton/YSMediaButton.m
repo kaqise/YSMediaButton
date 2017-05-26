@@ -30,6 +30,7 @@
     NSTimeInterval _ratio;//手移动是播放的比率
     Direction _direction;//方向
     TouchStyle _style;//修改的类型
+    BOOL _hasMovied;//移动过
     
 }
 //触摸开始
@@ -78,8 +79,9 @@
     UITouch *touch = [touches anyObject];
     CGPoint currentP = [touch locationInView:self];
     CGPoint diffPoint = CGPointMake(currentP.x - _statrPoint.x, currentP.y - _statrPoint.y);
-    if (diffPoint.x < kDefaultMinMovieSpace && diffPoint.x > -kDefaultMinMovieSpace && diffPoint.y < kDefaultMinMovieSpace && diffPoint.y > -kDefaultMinMovieSpace) {
+    if (diffPoint.x < kDefaultMinMovieSpace && diffPoint.x > -kDefaultMinMovieSpace && diffPoint.y < kDefaultMinMovieSpace && diffPoint.y > -kDefaultMinMovieSpace && !_hasMovied) {
         [self.touchDelegate ys_setoffTapAction];
+        _hasMovied = NO;
     }
 }
 
@@ -98,8 +100,13 @@
         //移动方向
         if (panPoint.x >= kDefaultMinMovieSpace || panPoint.x <= -kDefaultMinMovieSpace) {//手指有移动方向为左右
             _direction = Direction_LeftOrRight;
+            _hasMovied = YES;
         }else if (panPoint.y >= kDefaultMinMovieSpace || panPoint.y <= -kDefaultMinMovieSpace){//手指有移动方向为上下
             _direction = Direction_UpOrDown;
+            _hasMovied = YES;
+        }else{
+            _direction = Direction_None;
+            _hasMovied = NO;
         }
     }
     
