@@ -59,7 +59,7 @@
     
     _totalTime = [self.touchDelegate ys_getTotalTime];
     
-    _ratio = _totalTime / 2 / [UIScreen mainScreen].bounds.size.width;//屏幕的1像素对应视频的要播多少秒(一个屏幕播总视频的一半)
+    _ratio = _totalTime / 2 / self.bounds.size.width;//屏幕的1像素对应视频的要播多少秒(一个屏幕播总视频的一半)
     
 }
 

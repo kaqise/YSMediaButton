@@ -17,8 +17,8 @@
 		548E101D1ECF5A4600ABD535 /* YSMediaButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E101C1ECF5A4600ABD535 /* YSMediaButtonTests.m */; };
 		548E10281ECF5A4600ABD535 /* YSMediaButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10271ECF5A4600ABD535 /* YSMediaButtonUITests.m */; };
 		548E10391ECF5AEB00ABD535 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10361ECF5AEB00ABD535 /* ViewController.m */; };
-		548E103A1ECF5AEB00ABD535 /* YSMediaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 548E10381ECF5AEB00ABD535 /* YSMediaButton.m */; };
 		83F19B57392DEBD645F9681F /* libPods-YSMediaButtonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F0ABFE2E335B80ABB998ED /* libPods-YSMediaButtonTests.a */; };
+		B048D5E71ED82B6C00EC00AD /* YSMediaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B048D5E61ED82B6C00EC00AD /* YSMediaButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +59,12 @@
 		548E10291ECF5A4600ABD535 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		548E10351ECF5AEB00ABD535 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		548E10361ECF5AEB00ABD535 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		548E10371ECF5AEB00ABD535 /* YSMediaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMediaButton.h; sourceTree = "<group>"; };
-		548E10381ECF5AEB00ABD535 /* YSMediaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMediaButton.m; sourceTree = "<group>"; };
 		5CFA9BA42E99BAA20B628EBC /* Pods-YSMediaButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButton/Pods-YSMediaButton.release.xcconfig"; sourceTree = "<group>"; };
 		690145D3252E6D6DB69A887C /* Pods-YSMediaButtonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButtonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButtonUITests/Pods-YSMediaButtonUITests.release.xcconfig"; sourceTree = "<group>"; };
 		72C814C2D8E74C9798D973FA /* libPods-YSMediaButtonUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSMediaButtonUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC351A9843A7A0981B2ED2C0 /* Pods-YSMediaButtonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSMediaButtonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YSMediaButtonTests/Pods-YSMediaButtonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B048D5E51ED82B6C00EC00AD /* YSMediaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSMediaButton.h; sourceTree = "<group>"; };
+		B048D5E61ED82B6C00EC00AD /* YSMediaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSMediaButton.m; sourceTree = "<group>"; };
 		E2D149BE4C6B1EFC84839948 /* libPods-YSMediaButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSMediaButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,8 +138,8 @@
 				548E10061ECF5A4600ABD535 /* AppDelegate.m */,
 				548E10351ECF5AEB00ABD535 /* ViewController.h */,
 				548E10361ECF5AEB00ABD535 /* ViewController.m */,
-				548E10371ECF5AEB00ABD535 /* YSMediaButton.h */,
-				548E10381ECF5AEB00ABD535 /* YSMediaButton.m */,
+				B048D5E51ED82B6C00EC00AD /* YSMediaButton.h */,
+				B048D5E61ED82B6C00EC00AD /* YSMediaButton.m */,
 				548E100B1ECF5A4600ABD535 /* Main.storyboard */,
 				548E100E1ECF5A4600ABD535 /* Assets.xcassets */,
 				548E10101ECF5A4600ABD535 /* LaunchScreen.storyboard */,
@@ -454,7 +454,7 @@
 			files = (
 				548E10391ECF5AEB00ABD535 /* ViewController.m in Sources */,
 				548E10071ECF5A4600ABD535 /* AppDelegate.m in Sources */,
-				548E103A1ECF5AEB00ABD535 /* YSMediaButton.m in Sources */,
+				B048D5E71ED82B6C00EC00AD /* YSMediaButton.m in Sources */,
 				548E10041ECF5A4600ABD535 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
