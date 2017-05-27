@@ -106,7 +106,6 @@
             _hasMovied = YES;
         }else{
             _direction = Direction_None;
-            _hasMovied = NO;
         }
     }
     
